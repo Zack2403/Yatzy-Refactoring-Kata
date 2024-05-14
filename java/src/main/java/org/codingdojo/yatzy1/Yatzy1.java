@@ -17,17 +17,10 @@ public class Yatzy1 {
     private static final int[] LARGE_STRAIGHT_EXPECTED_RESULT = {2, 3, 4, 5, 6};
     private static final int SMALL_STRAIGHT_SUM = 15;
     private static final int LARGE_STRAIGHT_SUM = 20;
-    private int[] dice;
+    private final int[] dice;
 
-    /**
-     * @deprecated please use the version with arguments
-     */
-    @Deprecated
-    public Yatzy1() {
-    }
 
     public Yatzy1(int die1, int die2, int die3, int die4, int die5) {
-        this();
         dice = new int[5];
         dice[0] = die1;
         dice[1] = die2;
